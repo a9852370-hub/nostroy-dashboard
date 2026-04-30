@@ -1,13 +1,9 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: 'Ситуационный центр НОСТРОЙ', // Можно обновить заголовок на русский
+  title: 'Ситуационный центр НОСТРОЙ',
   description: 'Интерактивная панель мониторинга СРО в федеральных округах РФ',
   generator: 'v0.app',
   icons: {
@@ -35,7 +31,6 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    // ИСПРАВЛЕНИЕ: ставим ru и добавляем подавление варнингов гидратации
     <html lang="ru" suppressHydrationWarning>
       <body className="font-sans antialiased">
         {children}
