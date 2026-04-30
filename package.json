@@ -13,6 +13,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "lucide-react": "latest",
-    "recharts": "latest"
+    "recharts": "latest",
+    "geist": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest"
   }
 }
