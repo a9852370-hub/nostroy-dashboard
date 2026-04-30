@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef61af13583302a1a448452a405baf508eacc03b0f06146aa5c8a126a91120ff
-size 5
+{
+  "name": "nostroy-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "lucide-react": "latest",
+    "recharts": "latest"
+  }
+}
