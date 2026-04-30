@@ -1,15 +1,18 @@
 "use client"
 
 import { useState, useCallback, useEffect } from "react"
-import { Sidebar } from "@/components/dashboard/sidebar"
-import { Header } from "@/components/dashboard/header"
-import { RussiaMap } from "@/components/dashboard/russia-map"
-import { FederalDistrictMap } from "@/components/dashboard/federal-district-map"
+// Убираем фигурные скобки там, где файлы экспортируют один компонент
+import Sidebar from "@/components/dashboard/sidebar"
+import Header from "@/components/dashboard/header"
+import RussiaMap from "@/components/dashboard/russia-map"
+import FederalDistrictMap from "@/components/dashboard/federal-district-map"
+// Charts обычно экспортирует много объектов, их можно оставить в скобках, 
+// НО проверь файл components/dashboard/charts.tsx — если там export default, скобки тоже не нужны.
 import { CompensationFundsChart, CourtCasesChart, DistrictDetailCharts, TopRegionsChart, CourtClaimsForecastChart } from "@/components/dashboard/charts"
-import { SROList } from "@/components/dashboard/sro-list"
-import { SROCard } from "@/components/dashboard/sro-card"
-import { CompanyList } from "@/components/dashboard/company-list"
-import { CompanyCard } from "@/components/dashboard/company-card"
+import SROList from "@/components/dashboard/sro-list"
+import SROCard from "@/components/dashboard/sro-card"
+import CompanyList from "@/components/dashboard/company-list"
+import CompanyCard from "@/components/dashboard/company-card"
 import { 
   type FederalDistrict, 
   type Region, 
